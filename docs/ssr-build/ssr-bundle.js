@@ -77,7 +77,7 @@ module.exports = __webpack_require__("JkW7");
 
 /***/ }),
 
-/***/ "EbM4":
+/***/ "FPln":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -92,8 +92,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact__ = __webpack_require__("uF5K");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_preact__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style__ = __webpack_require__("EbM4");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__less__ = __webpack_require__("FPln");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_font_awesome_less_font_awesome__ = __webpack_require__("ShJz");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_font_awesome_less_font_awesome___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_font_awesome_less_font_awesome__);
 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -106,7 +108,47 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
+
+var manifest = [["Prototype", "Build good looking interfaces, create a strong baseline"], ["Flexible", "Colors can be added and changed. Values can be increased to offer more paddings, spacings if needed."], ["Intuitive", "Classnames express the intent of styling. Naming derives from CSS properties and builds on them."], ["Composable", "Where possible, compose. a solid important box is both a semantic and meaningful composition"], ["Minimal", "No additional markup. Cure divitis. Build from semantic markup."], ["Modern", "Use flex for layouts. Maintain vertical rythm. Paddings, margins and sizes scale with text-size."], ["Responsible TODO", "Do not impose responsiveness. Offer tooling for responsive layouts without enforcing a paradigm."]];
+
 var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'h2',
+	null,
+	'Manifesto'
+);
+
+var Manifesto = function Manifesto() {
+	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'article',
+		{ id: 'manifesto', 'class': 'margin-top-3' },
+		_ref,
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			WhiteBox,
+			null,
+			manifest.map(function (_ref2) {
+				var title = _ref2[0],
+				    text = _ref2[1];
+				return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'div',
+					null,
+					__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+						'h4',
+						null,
+						title
+					),
+					__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+						'p',
+						null,
+						text
+					)
+				);
+			})
+		)
+	);
+};
+
+var _ref3 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'article',
 	{ id: 'form' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -240,16 +282,16 @@ var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 );
 
 var Form = function Form() {
-	return _ref;
+	return _ref3;
 };
 
-var _ref2 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref4 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h2',
 	null,
 	'Buttons'
 );
 
-var _ref3 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref5 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'section',
 	{ 'class': 'spaced-2 padding-1 solid white' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -268,8 +310,8 @@ var Buttons = function Buttons() {
 	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 		'article',
 		{ id: 'buttons' },
-		_ref2,
-		_ref3,
+		_ref4,
+		_ref5,
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'section',
 			{ 'class': 'spaced-2 solid white padding-1' },
@@ -306,19 +348,21 @@ var Buttons = function Buttons() {
 	);
 };
 
-var _ref4 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var filler = "Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing, and adjusting the space between pairs of letters.";
+
+var _ref6 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h2',
 	null,
 	'Basic type (reset)'
 );
 
-var _ref5 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref7 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h4',
 	null,
 	'Headers'
 );
 
-var _ref6 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref8 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'div',
 	{ 'class': 'padding-2 border-light' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -327,73 +371,73 @@ var _ref6 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'h1',
 			null,
-			'h1 Fake News Proven Correct!'
+			'About typography (h1)'
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'p',
 			null,
-			'Text should have an appropriate distance from it\'s header, without much fussing about.'
+			filler
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'h2',
 			null,
-			'h2 Fake News Proven Correct!'
+			'About typography (h2)'
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'p',
 			null,
-			'Text should have an appropriate distance from it\'s header, without much fussing about.'
+			filler
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'h3',
 			null,
-			'h3 Fake News Proven Correct!'
+			'About typography (h3)'
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'p',
 			null,
-			'Text should have an appropriate distance from it\'s header, without much fussing about.'
+			filler
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'h4',
 			null,
-			'h4 Fake News Proven Correct!'
+			'About typography (h4)'
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'p',
 			null,
-			'Text should have an appropriate distance from it\'s header, without much fussing about.'
+			filler
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'h5',
 			null,
-			'h5 Fake News Proven Correct!'
+			'About typography (h5)'
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'p',
 			null,
-			'Text should have an appropriate distance from it\'s header, without much fussing about.'
+			filler
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'h6',
 			null,
-			'h6 Fake News Proven Correct!'
+			'About typography (h6)'
 		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'p',
 			null,
-			'Text should have an appropriate distance from it\'s header, without much fussing about.'
+			filler
 		)
 	)
 );
 
-var _ref7 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref9 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h4',
 	null,
 	'Sizes'
 );
 
-var _ref8 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref10 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'div',
 	{ 'class': 'border-light padding-2' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -418,19 +462,19 @@ var _ref8 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	)
 );
 
-var _ref9 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref11 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h4',
 	null,
 	'Common markup'
 );
 
-var _ref10 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref12 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h3',
 	null,
 	'Typography: the art and technique of arranging type'
 );
 
-var _ref11 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref13 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'ol',
 	null,
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -450,19 +494,19 @@ var _ref11 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	)
 );
 
-var _ref12 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref14 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'em',
 	null,
 	'when displayed.'
 );
 
-var _ref13 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref15 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'quote',
 	null,
 	'The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing, and adjusting the space between pairs of letters.'
 );
 
-var _ref14 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref16 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'code',
 	null,
 	'arranging type'
@@ -472,28 +516,28 @@ var Type = function Type() {
 	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 		'article',
 		{ id: 'type' },
-		_ref4,
+		_ref6,
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'section',
 			{ 'class': 'solid white padding-2 spaced-vertical-2 max-width-20 type' },
-			_ref5,
-			_ref6,
 			_ref7,
 			_ref8,
 			_ref9,
+			_ref10,
+			_ref11,
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 				'div',
 				{ 'class': 'border-light padding-2' },
-				_ref10,
+				_ref12,
 				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 					'p',
 					{ 'class': 'max-width-20' },
 					'Typography is the art and technique of arranging type to make written language:',
-					_ref11,
-					_ref12,
 					_ref13,
-					'Typography is the art and technique of ',
 					_ref14,
+					_ref15,
+					'Typography is the art and technique of ',
+					_ref16,
 					' to make written language legible, readable, and appealing when displayed.',
 					__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 						'pre',
@@ -507,7 +551,7 @@ var Type = function Type() {
 	);
 };
 
-var _ref15 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref17 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'article',
 	{ id: 'flex' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -693,34 +737,34 @@ var _ref15 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 );
 
 var Flex = function Flex() {
-	return _ref15;
+	return _ref17;
 };
 
-var _ref16 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref18 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h2',
 	null,
 	'Advanced layouts'
 );
 
-var _ref17 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref19 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'p',
 	null,
 	'Setting height and scrolling'
 );
 
-var _ref18 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref20 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'div',
 	{ 'class': 'box-5 min-width-5 padding-1 solid dark' },
 	'.box-5 and .min-width-5 to avoid flex-scaling'
 );
 
-var _ref19 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-	'span',
+var _ref21 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'p',
 	null,
-	'Just some content to force scrolling and wrapping... '
+	filler
 );
 
-var _ref20 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref22 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'div',
 	{ 'class': 'flex center middle absolute cover fade solid black' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -748,35 +792,37 @@ var _ref20 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	)
 );
 
-var _ref21 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-	'span',
+var _ref23 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'h1',
 	null,
-	'Just some content to force scrolling and wrapping... '
+	'About typography'
+);
+
+var _ref24 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'p',
+	null,
+	filler
 );
 
 var Sizing = function Sizing() {
 	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 		'article',
 		{ id: 'sizing' },
-		_ref16,
-		_ref17,
+		_ref18,
+		_ref19,
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'section',
 			{ 'class': 'solid white padding-1' },
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 				'div',
 				{ 'class': 'flex padding-vertical-2 spaced-2' },
-				_ref18,
+				_ref20,
 				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 					'div',
 					{ 'class': 'padding-1 solid light height-5 scroll' },
-					__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-						'p',
-						null,
-						new Array(20).fill(1).map(function (i) {
-							return _ref19;
-						})
-					)
+					new Array(20).fill(1).map(function (i) {
+						return _ref21;
+					})
 				)
 			)
 		),
@@ -786,12 +832,13 @@ var Sizing = function Sizing() {
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 				'div',
 				{ 'class': 'relative' },
-				_ref20,
+				_ref22,
 				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 					'section',
 					{ 'class': 'vh-40 scroll' },
-					new Array(100).fill(1).map(function (i) {
-						return _ref21;
+					_ref23,
+					new Array(20).fill(1).map(function (i) {
+						return _ref24;
 					})
 				)
 			)
@@ -799,7 +846,7 @@ var Sizing = function Sizing() {
 	);
 };
 
-var _ref22 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref25 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h2',
 	null,
 	'Shadows'
@@ -809,7 +856,7 @@ var Shadows = function Shadows() {
 	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 		'article',
 		{ id: 'shadows' },
-		_ref22,
+		_ref25,
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'section',
 			{ 'class': 'padding-2 type solid white flex spaced-3 spaced-vertical-1 wrap' },
@@ -841,7 +888,7 @@ var Shadows = function Shadows() {
 	);
 };
 
-var _ref23 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref26 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'h2',
 	null,
 	'Colors'
@@ -851,7 +898,7 @@ var Colors = function Colors() {
 	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 		'article',
 		{ id: 'colors' },
-		_ref23,
+		_ref26,
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'section',
 			{ 'class': 'padding-2 type solid white flex spaced-3 spaced-vertical-1 wrap' },
@@ -877,252 +924,684 @@ var Colors = function Colors() {
 	);
 };
 
-var _ref24 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-	'article',
-	{ id: 'tables' },
+var _ref27 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'h2',
+	null,
+	'Tables'
+);
+
+var _ref28 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'section',
+	{ 'class': 'padding-2 type solid white' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-		'h2',
+		'p',
 		null,
-		'Tables'
+		'Tables receive default styling. Add ',
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'code',
+			null,
+			'.stripes'
+		),
+		' for a striped table. Add ',
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'code',
+			null,
+			'.border'
+		),
+		' a border around your table.'
+	)
+);
+
+var _ref29 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'tr',
+	null,
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'th',
+		null,
+		'Player'
 	),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-		'section',
-		{ 'class': 'padding-2 type solid white' },
+		'th',
+		null,
+		'Hightscore'
+	)
+);
+
+var _ref30 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'tr',
+	null,
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'player 1'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'1000020'
+	)
+);
+
+var _ref31 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'tr',
+	null,
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'mvhenten'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'39283'
+	)
+);
+
+var _ref32 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'tr',
+	null,
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'th',
+		null,
+		'Player'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'th',
+		null,
+		'Hightscore'
+	)
+);
+
+var _ref33 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'tr',
+	null,
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'player 1'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'1000020'
+	)
+);
+
+var _ref34 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'tr',
+	null,
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'mvhenten'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'td',
+		null,
+		'39283'
+	)
+);
+
+var _ref35 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'section',
+	{ 'class': 'padding-2 type solid white' },
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'table',
+		{ 'class': 'spread lighten info stripes' },
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-			'table',
+			'tr',
 			null,
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'th',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Player'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Hightscore'
-				)
+				'Player'
 			),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'th',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'player 1'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'1000020'
-				)
+				'Hightscore'
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'tr',
+			null,
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'td',
+				null,
+				'player 1'
 			),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'td',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'mvhenten'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'39283'
-				)
+				'1000020'
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'tr',
+			null,
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'td',
+				null,
+				'mvhenten'
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'td',
+				null,
+				'39283'
 			)
 		)
-	),
+	)
+);
+
+var _ref36 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'section',
+	{ 'class': 'padding-2 type solid white' },
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-		'section',
-		{ 'class': 'padding-2 type solid white' },
+		'table',
+		{ 'class': 'spread lighten info stripes border' },
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-			'table',
-			{ 'class': 'stripes border default' },
+			'tr',
+			null,
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'th',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Player'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Hightscore'
-				)
+				'Player'
 			),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'th',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'player 1'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'1000020'
-				)
-			),
-			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
-				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'mvhenten'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'39283'
-				)
+				'Hightscore'
 			)
-		)
-	),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-		'section',
-		{ 'class': 'padding-2 type solid white' },
+		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-			'table',
-			{ 'class': 'spread lighten info stripes' },
+			'tr',
+			null,
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'td',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Player'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Hightscore'
-				)
+				'player 1'
 			),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'td',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'player 1'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'1000020'
-				)
-			),
-			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
-				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'mvhenten'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'39283'
-				)
+				'1000020'
 			)
-		)
-	),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-		'section',
-		{ 'class': 'padding-2 type solid white' },
+		),
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-			'table',
-			{ 'class': 'spread lighten info stripes border' },
+			'tr',
+			null,
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'td',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Player'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'th',
-					null,
-					'Hightscore'
-				)
+				'mvhenten'
 			),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'td',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'player 1'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'1000020'
-				)
+				'39283'
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'tr',
+			null,
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'td',
+				null,
+				'T-Rex'
 			),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
+				'td',
 				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'mvhenten'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'39283'
-				)
-			),
-			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'tr',
-				null,
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'T-Rex'
-				),
-				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-					'td',
-					null,
-					'5645'
-				)
+				'5645'
 			)
 		)
 	)
 );
 
 var Tables = function Tables() {
-	return _ref24;
+	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'article',
+		{ id: 'tables' },
+		_ref27,
+		_ref28,
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'section',
+			{ 'class': 'padding-2 type solid white flex between spaced-5' },
+			["", "default stripes", "default stripes border"].map(function (className) {
+				return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'table',
+					{ 'class': className },
+					_ref29,
+					_ref30,
+					_ref31
+				);
+			})
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'section',
+			{ 'class': 'padding-2 type solid white flex between spaced-5' },
+			["info", "info stripes", "info stripes border"].map(function (className) {
+				return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'table',
+					{ 'class': className },
+					_ref32,
+					_ref33,
+					_ref34
+				);
+			})
+		),
+		_ref35,
+		_ref36
+	);
 };
 
-var _ref26 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+var _ref37 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'article',
+	{ id: 'icons' },
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'h2',
+		null,
+		'Icons'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'section',
+		{ 'class': 'padding-2 type solid white flex col spaced-3 spaced-vertical-1 wrap' },
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'FontAwesome is supported without modification. Use font-awesome classed directly on elements'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'h4',
+			null,
+			'Buttons'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'button',
+			null,
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('i', { 'class': 'fa fa-camera-retro' }),
+			' showcasing font-awesome support'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'a',
+			{ 'class': 'solid button info icon fa-camera-retro' },
+			'like this'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'h4',
+			null,
+			'Links'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'a',
+			{ href: '#type', 'class': 'icon fa-camera-retro' },
+			'like this'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'h4',
+			null,
+			'Form elements'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'Wrap form elements in an ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'code',
+				null,
+				'.icon'
+			),
+			' class to prepend them with an icon.'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'div',
+			{ 'class': 'icon fa-camera-retro grow info text-info' },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('input', { 'class': 'icon fa-camera-retro', placeholder: 'input with icon' })
+		)
+	)
+);
+
+var Icons = function Icons() {
+	return _ref37;
+};
+
+var WhiteBox = function WhiteBox(_ref38) {
+	var children = _ref38.children;
+	return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'section',
+		{ 'class': 'padding-2 type solid white flex col' },
+		children
+	);
+};
+
+var _ref39 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'article',
+	{ id: 'spacing' },
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'h2',
+		null,
+		'Spacing'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		WhiteBox,
+		null,
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'All elements on this page have been spaced using ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'em',
+				null,
+				'spaced-'
+			),
+			' classes. There are 20 spaced classes, horizontal and vertical.'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'Vertical spacing is as units of line-height. Each step is half a grid-line. use ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'code',
+				null,
+				'.spaced-vertical-2'
+			),
+			' to achieve an even, vertical spacing.'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'div',
+			{ 'class': 'spaced-vertical-2' },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'solid info padding-1' },
+				'a white box'
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'solid info padding-1' },
+				'a white box'
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'solid info padding-1' },
+				'a white box'
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'Horizontal spacing is defined by character spacing. Each step is one character width. use ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'code',
+				null,
+				'.spaced-2'
+			),
+			' to space ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'em',
+				null,
+				'inline'
+			),
+			' elements by two characters.'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'div',
+			{ 'class': 'spaced-2' },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'button',
+				{ 'class': 'solid info' },
+				'cancel action'
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'button',
+				{ 'class': 'solid danger' },
+				'proceed action'
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'button',
+				{ 'class': 'solid warning' },
+				'maybe action'
+			)
+		)
+	)
+);
+
+var Spacing = function Spacing() {
+	return _ref39;
+};
+
+var _ref40 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'article',
+	{ id: 'padding' },
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'h2',
+		null,
+		'Padding'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		WhiteBox,
+		null,
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'Apply padding as needed. Padding is defined as unit times line-height'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'div',
+			{ 'class': 'flex between spaced-2' },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important padding-1' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'padding-1'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important padding-2' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'padding-2'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important padding-4' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'padding-2'
+				)
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'Padding can be applied as ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'code',
+				null,
+				'.padding-horizontal-'
+			),
+			' or ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'code',
+				null,
+				'.padding-vertical-'
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'div',
+			{ 'class': 'flex between spaced-2' },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important padding-horizontal-1' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'padding-horizontal-1'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important padding-vertical-2' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'padding-vertical-2'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important padding-horizontal-3 padding-vertical-5' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'padding-horizontal-3'
+				),
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'padding-vertical-5'
+				)
+			)
+		)
+	)
+);
+
+var Padding = function Padding() {
+	return _ref40;
+};
+
+var _ref41 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'article',
+	{ id: 'padding' },
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		'h2',
+		null,
+		'Margin'
+	),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+		WhiteBox,
+		null,
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'Apply margin as needed. Margin is defined as unit times line-height'
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'div',
+			{ 'class': 'flex between spaced-2' },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important margin-1' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'margin-1'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important margin-2' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'margin-2'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important margin-4' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'margin-2'
+				)
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'p',
+			null,
+			'margin can be applied as ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'code',
+				null,
+				'.margin-horizontal-'
+			),
+			' or ',
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'code',
+				null,
+				'.margin-vertical-'
+			)
+		),
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+			'div',
+			{ 'class': 'flex between spaced-2' },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important margin-horizontal-1' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'margin-horizontal-1'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important margin-vertical-2' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'margin-vertical-2'
+				)
+			),
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+				'div',
+				{ 'class': 'box-7 solid important margin-horizontal-3 margin-vertical-5' },
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'margin-horizontal-3'
+				),
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+					'code',
+					{ 'class': 'solid info' },
+					'margin-vertical-5'
+				)
+			)
+		)
+	)
+);
+
+var Margin = function Margin() {
+	return _ref41;
+};
+
+var _ref43 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 	'div',
-	{ 'class': 'scroll width-10 vh-100 grow scroll padding-horizontal-2 padding-bottom-6 solid light' },
+	{ 'class': 'scroll width-10 vh-100 grow scroll padding-horizontal-2 padding-bottom-6 solid light spaced-vertical-5' },
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Manifesto, null),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Type, null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Buttons, null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Form, null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Flex, null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Sizing, null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Shadows, null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
 	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Colors, null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
-	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Tables, null)
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Spacing, null),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Padding, null),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Margin, null),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Tables, null),
+	__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(Icons, null)
 );
 
 var App = function (_Component) {
@@ -1145,6 +1624,9 @@ var App = function (_Component) {
 
 	App.prototype.render = function render() {
 		var menu = [{
+			title: "Manifesto",
+			href: "#manifesto"
+		}, {
 			title: "Typography",
 			href: "#type"
 		}, {
@@ -1163,17 +1645,23 @@ var App = function (_Component) {
 			title: "Shadows",
 			href: "#shadows"
 		}, {
-			title: "Font Awesome",
-			href: "#icons"
-		}, {
 			title: "Colors",
 			href: "#colors"
 		}, {
-			title: "Borders, padding, margins",
-			href: "#borders"
+			title: "Spacing",
+			href: "#spacing"
+		}, {
+			title: "Padding",
+			href: "#padding"
+		}, {
+			title: "Margin",
+			href: "#margin"
 		}, {
 			title: "Tables",
 			href: "#tables"
+		}, {
+			title: "Icons",
+			href: "#icons"
 		}];
 		return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'div',
@@ -1184,9 +1672,9 @@ var App = function (_Component) {
 				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 					'ul',
 					{ 'class': 'list-none list-flat padding-vertical-3' },
-					menu.map(function (_ref25) {
-						var title = _ref25.title,
-						    href = _ref25.href;
+					menu.map(function (_ref42) {
+						var title = _ref42.title,
+						    href = _ref42.href;
 						return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 							'li',
 							null,
@@ -1199,7 +1687,7 @@ var App = function (_Component) {
 					})
 				)
 			),
-			_ref26
+			_ref43
 		);
 	};
 
@@ -1207,6 +1695,13 @@ var App = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_preact__["Component"]);
 
 
+
+/***/ }),
+
+/***/ "ShJz":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
