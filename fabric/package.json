@@ -2,7 +2,7 @@
   "name": "fabric",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "style/index.less",
   "scripts": {
     "test": "eslint . && preact test",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
@@ -22,11 +22,10 @@
     "if-env": "^1.0.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
-    "preact-cli": "^1.4.1"
-  },
-  "dependencies": {
     "preact": "^8.2.5",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7"
+  },
+  "dependencies": {
   }
 }

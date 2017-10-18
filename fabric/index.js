@@ -1,7 +1,32 @@
 import './style';
 
+import "font-awesome/less/font-awesome";
+
 import { Component } from 'preact';
 
+const manifest = [
+	["Prototype", "Build good looking interfaces, create a strong baseline", ],
+	["Flexible", "Colors can be added and changed. Values can be increased to offer more paddings, spacings if needed.", ],
+	["Intuitive", "Classnames express the intent of styling. Naming derives from CSS properties and builds on them.", ],
+	["Composable", "Where possible, compose. a solid important box is both a semantic and meaningful composition"],
+	["Minimal", "No additional markup. Cure divitis. Build from semantic markup.", ],
+	["Modern", "Use flex for layouts. Maintain vertical rythm. Paddings, margins and sizes scale with text-size.", ],
+	["Responsible TODO", "Do not impose responsiveness. Offer tooling for responsive layouts without enforcing a paradigm.", ],
+];
+
+const Manifesto = () => (
+	<article id="manifesto" class="margin-top-3">
+		<h2>Manifesto</h2>
+		<WhiteBox>
+		{manifest.map(([title, text]) => (
+			<div>
+				<h4>{title}</h4>
+				<p>{text}</p>
+			</div>
+		))}
+		</WhiteBox>
+	</article>
+);
 
 const Form = () => (
 	<article id="form">
@@ -74,6 +99,7 @@ const Buttons = () => (
 );
 
 
+const filler = "Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing, and adjusting the space between pairs of letters."
 
 const Type = () => (
 	<article id="type">
@@ -82,18 +108,18 @@ const Type = () => (
 			<h4>Headers</h4>
 			<div class="padding-2 border-light">
 				<div class="type-grid">
-					<h1>h1 Fake News Proven Correct!</h1>
-					<p>Text should have an appropriate distance from it's header, without much fussing about.</p>
-					<h2>h2 Fake News Proven Correct!</h2>
-					<p>Text should have an appropriate distance from it's header, without much fussing about.</p>
-					<h3>h3 Fake News Proven Correct!</h3>
-					<p>Text should have an appropriate distance from it's header, without much fussing about.</p>
-					<h4>h4 Fake News Proven Correct!</h4>
-					<p>Text should have an appropriate distance from it's header, without much fussing about.</p>
-					<h5>h5 Fake News Proven Correct!</h5>
-					<p>Text should have an appropriate distance from it's header, without much fussing about.</p>
-					<h6>h6 Fake News Proven Correct!</h6>
-					<p>Text should have an appropriate distance from it's header, without much fussing about.</p>
+					<h1>About typography (h1)</h1>
+					<p>{filler}</p>
+					<h2>About typography (h2)</h2>
+					<p>{filler}</p>
+					<h3>About typography (h3)</h3>
+					<p>{filler}</p>
+					<h4>About typography (h4)</h4>
+					<p>{filler}</p>
+					<h5>About typography (h5)</h5>
+					<p>{filler}</p>
+					<h6>About typography (h6)</h6>
+					<p>{filler}</p>
 				</div>
 			</div>
 			<h4>Sizes</h4>
@@ -199,9 +225,9 @@ const Sizing = () => (
 					.box-5 and .min-width-5 to avoid flex-scaling
 				</div>
 				<div class="padding-1 solid light height-5 scroll">
-					<p>
-						{new Array(20).fill(1).map(i => <span>Just some content to force scrolling and wrapping... </span>)}
-					</p>
+					{new Array(20).fill(1).map(i => (
+						<p>{filler}</p>
+					))}
 				</div>
 			</div>
 		</section>
@@ -217,7 +243,10 @@ const Sizing = () => (
 					</section>
 				</div>
 				<section class="vh-40 scroll">
-					{new Array(100).fill(1).map(i => <span>Just some content to force scrolling and wrapping... </span>)}
+					<h1>About typography</h1>
+					{new Array(20).fill(1).map(i => (
+						<p>{filler}</p>
+					))}
 				</section>
 			</div>
 		</section>
@@ -274,7 +303,15 @@ const Tables = () => (
 	<article id="tables">
 		<h2>Tables</h2>
 		<section class="padding-2 type solid white">
-			<table>
+			<p>Tables receive default styling. Add <code>.stripes</code> for a striped table. Add <code>.border</code> a border around your table.</p>
+		</section>
+		<section class="padding-2 type solid white flex between spaced-5">
+		{[
+			"",
+			"default stripes",
+			"default stripes border"
+		].map(className => (
+			<table class={className}>
 				<tr>
 					<th>Player</th>
 					<th>Hightscore</th>
@@ -288,9 +325,15 @@ const Tables = () => (
 					<td>39283</td>
 				</tr>
 			</table>
+		))}
 		</section>
-		<section class="padding-2 type solid white">
-			<table class="stripes border default">
+		<section class="padding-2 type solid white flex between spaced-5">
+		{[
+			"info",
+			"info stripes",
+			"info stripes border"
+		].map(className => (
+			<table class={className}>
 				<tr>
 					<th>Player</th>
 					<th>Hightscore</th>
@@ -304,7 +347,10 @@ const Tables = () => (
 					<td>39283</td>
 				</tr>
 			</table>
+		))}
 		</section>
+
+
 		<section class="padding-2 type solid white">
 			<table class="spread lighten info stripes">
 				<tr>
@@ -345,19 +391,153 @@ const Tables = () => (
 
 );
 
+const Icons = () => (
+	<article id="icons">
+		<h2>Icons</h2>
+		<section class="padding-2 type solid white flex col spaced-3 spaced-vertical-1 wrap">
+			<p>FontAwesome is supported without modification. Use font-awesome classed directly on elements</p>
+	
+			<h4>Buttons</h4>
+			<button><i class="fa fa-camera-retro"/> showcasing font-awesome support</button>
+			<a class="solid button info icon fa-camera-retro">like this</a>
+			
+			<h4>Links</h4>
+			<a href="#type" class="icon fa-camera-retro">like this</a>
+
+			<h4>Form elements</h4>	
+
+			<p>Wrap form elements in an <code>.icon</code> class to prepend them with an icon.</p>
+			<div class="icon fa-camera-retro grow info text-info">
+			  <input class="icon fa-camera-retro" placeholder="input with icon"/>
+			</div>
+
+		</section>
+	</article>
+);
+
+const WhiteBox = ({ children }) => (
+	<section class="padding-2 type solid white flex col">
+		{children}
+	</section>
+);
+
+const Spacing = () => (
+	<article id="spacing">
+		<h2>Spacing</h2>
+		<WhiteBox>
+			<p>All elements on this page have been spaced using <em>spaced-</em> classes. There are 20 spaced classes, horizontal and vertical.</p>
+			<br/>
+			<p>Vertical spacing is as units of line-height. Each step is half a grid-line. 
+				use <code>.spaced-vertical-2</code> to achieve an even, vertical spacing.</p>
+			<div class="spaced-vertical-2">
+				<div class="solid info padding-1">
+				a white box
+				</div>
+				<div class="solid info padding-1">
+				a white box
+				</div>
+				<div class="solid info padding-1">
+				a white box
+				</div>
+			</div>
+			<p>Horizontal spacing is defined by character spacing. Each step is one character width.
+				use <code>.spaced-2</code> to space <em>inline</em> elements by two characters.
+			</p>
+				
+			<div class="spaced-2">
+				<button class="solid info">cancel action</button>
+				<button class="solid danger">proceed action</button>
+				<button class="solid warning">maybe action</button>
+			</div>
+		</WhiteBox>
+	</article>
+);
+
+const Padding = () => (
+	<article id="padding">
+		<h2>Padding</h2>
+		<WhiteBox>
+			<p>Apply padding as needed. Padding is defined as unit times line-height</p>
+			<div class="flex between spaced-2">
+				<div class="box-7 solid important padding-1">
+					<code class="solid info">padding-1</code>
+				</div>
+				<div class="box-7 solid important padding-2">
+					<code class="solid info">padding-2</code>
+				</div>
+				<div class="box-7 solid important padding-4">
+					<code class="solid info">padding-2</code>
+				</div>
+			</div>
+			<br/>
+			<p>Padding can be applied as <code>.padding-horizontal-</code> or <code>.padding-vertical-</code></p>
+			<div class="flex between spaced-2">
+				<div class="box-7 solid important padding-horizontal-1">
+					<code class="solid info">padding-horizontal-1</code>
+				</div>
+				<div class="box-7 solid important padding-vertical-2">
+					<code class="solid info">padding-vertical-2</code>
+				</div>
+				<div class="box-7 solid important padding-horizontal-3 padding-vertical-5">
+					<code class="solid info">padding-horizontal-3</code><br/>
+					<code class="solid info">padding-vertical-5</code>
+				</div>
+			</div>
+		</WhiteBox>
+	</article>
+);
+
+const Margin = () => (
+	<article id="padding">
+		<h2>Margin</h2>
+		<WhiteBox>
+			<p>Apply margin as needed. Margin is defined as unit times line-height</p>
+			<div class="flex between spaced-2">
+				<div class="box-7 solid important margin-1">
+					<code class="solid info">margin-1</code>
+				</div>
+				<div class="box-7 solid important margin-2">
+					<code class="solid info">margin-2</code>
+				</div>
+				<div class="box-7 solid important margin-4">
+					<code class="solid info">margin-2</code>
+				</div>
+			</div>
+			<br/>
+			<p>margin can be applied as <code>.margin-horizontal-</code> or <code>.margin-vertical-</code></p>
+			<div class="flex between spaced-2">
+				<div class="box-7 solid important margin-horizontal-1">
+					<code class="solid info">margin-horizontal-1</code>
+				</div>
+				<div class="box-7 solid important margin-vertical-2">
+					<code class="solid info">margin-vertical-2</code>
+				</div>
+				<div class="box-7 solid important margin-horizontal-3 margin-vertical-5">
+					<code class="solid info">margin-horizontal-3</code><br/>
+					<code class="solid info">margin-vertical-5</code>
+				</div>
+			</div>
+		</WhiteBox>
+	</article>
+);
+
+
 
 export default class App extends Component {
 	componentDidMount() {
 		const frag = document.location.hash;
-		
+
 		if (!frag) return;
-		
+
 		const el = document.querySelector(frag);
 		if (el) el.scrollIntoView();
 	}
 
-	render(){
-		const menu = [
+	render() {
+		const menu = [{
+				title: "Manifesto",
+				href: "#manifesto"
+			},
 			{
 				title: "Typography",
 				href: "#type"
@@ -383,21 +563,29 @@ export default class App extends Component {
 				href: "#shadows"
 			},
 			{
-				title: "Font Awesome",
-				href: "#icons"
-			},
-			{
 				title: "Colors",
 				href: "#colors"
 			},
 			{
-				title: "Borders, padding, margins",
-				href: "#borders"
+				title: "Spacing",
+				href: "#spacing"
+			},
+			{
+				title: "Padding",
+				href: "#padding"
+			},
+			{
+				title: "Margin",
+				href: "#margin"
 			},
 			{
 				title: "Tables",
 				href: "#tables"
-			}
+			},
+			{
+				title: "Icons",
+				href: "#icons"
+			},
 		];
 		return (
 			<div class="flex row min-width-20">
@@ -408,23 +596,20 @@ export default class App extends Component {
 						))}
 					</ul>
 				</div>
-				<div class="scroll width-10 vh-100 grow scroll padding-horizontal-2 padding-bottom-6 solid light">
+				<div class="scroll width-10 vh-100 grow scroll padding-horizontal-2 padding-bottom-6 solid light spaced-vertical-5">
+					<Manifesto />
 					<Type />
-					<br/>
 					<Buttons />
-					<br/>
 					<Form />
-					<br/>
 					<Flex />
-					<br/>
 					<Sizing />
-					<br/>
 					<Shadows/>
-					<br />
 					<Colors />
-					<br/>
+					<Spacing />
+					<Padding />
+					<Margin />
 					<Tables />
-					
+					<Icons />
 				</div>
 			</div>
 		);

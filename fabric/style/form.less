@@ -28,12 +28,6 @@ input[type="radio"], input[type="checkbox"] {
     line-height: @line-height;
 }
 
-label[for]:active {
-    color: darken(@color-dark, 30%);
-}
-
-
-
 textarea {
     padding: @line-height * 0.5 1ch;
 }
@@ -48,7 +42,6 @@ select, select:focus {
 }
 
 select {
-    // background: #ccc;
     color: @color-dark;
     box-sizing: border-box;
     padding-right: 15px;
@@ -60,13 +53,6 @@ select {
         linear-gradient(to bottom left, @color-dark, @color-dark 50%, transparent 50%, transparent);
 }
 
-select:before {
-    display: block;
-    width: 10px;
-    height: 10px;
-    content: "x";
-}
-
 label {
     padding: 0.7em 0 0;
 }
@@ -74,3 +60,15 @@ label {
 .noresize {
     resize: none;
 }
+
+.icon::before {
+    display: inline-block;
+    margin-right: .5em;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
