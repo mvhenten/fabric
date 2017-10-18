@@ -1,4 +1,4 @@
-import './style';
+import './less';
 
 import "font-awesome/less/font-awesome";
 
