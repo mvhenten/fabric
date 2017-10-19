@@ -1,31 +1,14 @@
 {
   "name": "fabric",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "style/index.less",
-  "scripts": {
-    "test": "eslint . && preact test",
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
-    "dev": "preact watch"
-  },
+  "repository": "https://github.com/mvhenten/fabric",
+  "scripts": {},
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "eslintConfig": {
-    "extends": "eslint-config-synacor"
-  },
-  "devDependencies": {
-    "eslint": "^4.6.1",
-    "eslint-config-synacor": "^1.1.1",
-    "if-env": "^1.0.0",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.5",
-    "preact": "^8.2.5",
-    "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.7"
-  },
+  "author": "Matthijs van Henten",
+  "license": "MIT",
   "dependencies": {
+    "less-loader": "^4.0.5"
   }
 }
