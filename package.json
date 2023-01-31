@@ -1,14 +1,19 @@
 {
-  "name": "fabric",
+  "name": "@mvhenten/fabric",
   "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
   "description": "",
   "main": "style/index.less",
   "repository": "https://github.com/mvhenten/fabric",
-  "scripts": {},
+  "scripts": {
+    "prepare": "lessc src/index.less dist/index.css"
+  },
   "keywords": [],
   "author": "Matthijs van Henten",
   "license": "MIT",
-  "dependencies": {
-    "less-loader": "^4.0.5"
+  "devDependencies": {
+    "less": "^4.1.3"
   }
 }
