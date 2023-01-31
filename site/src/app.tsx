@@ -1,32 +1,113 @@
-import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
-import './app.css'
+import { useState } from "preact/hooks";
+
+import {
+  Buttons,
+  Colors,
+  Flex,
+  Form,
+  Icons,
+  Manifesto,
+  Margin,
+  Padding,
+  Shadows,
+  Sizing,
+  Spacing,
+  Tables,
+  Type,
+} from "./lib/components";
+
+const menu = [
+  {
+    title: "Manifesto",
+    href: "#manifesto",
+  },
+  {
+    title: "Typography",
+    href: "#type",
+  },
+  {
+    title: "Buttons",
+    href: "#buttons",
+  },
+  {
+    title: "Forms",
+    href: "#form",
+  },
+  {
+    title: "Flex controls",
+    href: "#flex",
+  },
+  {
+    title: "Sizing",
+    href: "#sizing",
+  },
+  {
+    title: "Shadows",
+    href: "#shadows",
+  },
+  {
+    title: "Colors",
+    href: "#colors",
+  },
+  {
+    title: "Spacing",
+    href: "#spacing",
+  },
+  {
+    title: "Padding",
+    href: "#padding",
+  },
+  {
+    title: "Margin",
+    href: "#margin",
+  },
+  {
+    title: "Tables",
+    href: "#tables",
+  },
+  {
+    title: "Icons",
+    href: "#icons",
+  },
+];
 
 export function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://preactjs.com" target="_blank">
-          <img src={preactLogo} class="logo preact" alt="Preact logo" />
-        </a>
+      <div class="flex row min-width-30 vh-100 align-stretch">
+        <div class="solid dark scroll grow-2 min-width-8">
+          <h2 class="solid padding-horizontal-1">Features</h2>
+          <ul class="list-none list-flat">
+            {menu.map(({ title, href }) => (
+              <li>
+                <a
+                  href={href}
+                  class="padding-1 button solid dark hover-important block"
+                >
+                  {title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="solid light grow-6 padding-horizontal-3 scroll">
+          <div class="max-width-25 spaced-vertical-4">
+            <Manifesto />
+            <Type />
+            <Buttons />
+            <Flex />
+            <Form />
+            <Sizing />
+            <Shadows />
+            <Colors />
+            <Spacing />
+            <Padding />
+            <Margin />
+            <Tables />
+            <Icons />
+          </div>
+        </div>
       </div>
-      <h1>Vite + Preact</h1>
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/app.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p class="read-the-docs">
-        Click on the Vite and Preact logos to learn more
-      </p>
     </>
-  )
+  );
 }

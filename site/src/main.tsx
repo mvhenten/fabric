@@ -1,5 +1,8 @@
-import { render } from 'preact'
-import { App } from './app'
-import './index.css'
+import { render } from "preact";
+import { App } from "./app";
 
-render(<App />, document.getElementById('app') as HTMLElement)
+import "./fabric.svg";
+
+import "@mvhenten/fabric/index.css";
+
+render(<App />, document.getElementById("app") as HTMLElement);

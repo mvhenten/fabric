@@ -58,3 +58,4 @@ typings/
 .env
 
 fabric/build
+*.css
